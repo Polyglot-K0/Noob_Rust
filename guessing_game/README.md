@@ -19,6 +19,7 @@ fn main() {
     // let foo = 5; <- immutable
     // let mut bar = 5; <- mutbale
     // We need to make it mutable in order to change the value with the user input
+    // Calling sring::new, a function that returns a new instance of a string
     let mut guess = String::new();
 
     io::stdin().read_line(&mut guess)
