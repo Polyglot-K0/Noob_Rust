@@ -20,6 +20,9 @@ fn main() {
     // let mut bar = 5; <- mutbale
     // We need to make it mutable in order to change the value with the user input
     // Calling sring::new, a function that returns a new instance of a string
+    // the :: syntax in the ::new line that new an associated function of string type
+    // this function, creates a new empty string
+    // To summarize, the let mut guess = String::new(); line has created a mutable variable that is currently bound to a new, empty instance of a String.
     let mut guess = String::new();
 
     io::stdin().read_line(&mut guess)
