@@ -6,7 +6,7 @@
 
 // if the type you want isnt in the prelude, you have to bring the type into scope
 // This is done explicitly into scope with the 'use' statement
-// 
+// in Rust - variables are immutable by default
 
 use std::io;
 
@@ -14,7 +14,11 @@ fn main() {
     println!("Guess the number!");
     
     println!("Please input the number.");
-
+    // let allows us to store the user input
+    // EXAMPLES of let
+    // let foo = 5; <- immutable
+    // let mut bar = 5; <- mutbale
+    // We need to make it mutable in order to change the value with the user input
     let mut guess = String::new();
 
     io::stdin().read_line(&mut guess)
