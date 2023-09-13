@@ -25,6 +25,8 @@ fn main() {
     // To summarize, the let mut guess = String::new(); line has created a mutable variable that is currently bound to a new, empty instance of a String.
     let mut guess = String::new();
 
+    // Calling the input/output we imported from the standard library
+    // In the next line - we ll call the stdin function from the io module
     io::stdin().read_line(&mut guess)
         .expect("Failed to read line.");
 
