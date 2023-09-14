@@ -31,7 +31,11 @@ fn main() {
 
     // the .read_line(&mut guess) - calls the read_line method on the standard input handle
     // We re also passing one argument to read_line: &mut guess
-    
+    // The job of read_line is to take whatever the user types into standard input and place that into a string
+
+    // THe & indicates that the argument is a reference
+    //  & is very similar to a pointer
+
     io::stdin().read_line(&mut guess)
         .expect("Failed to read line.");
 
