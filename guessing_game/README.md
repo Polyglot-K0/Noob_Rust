@@ -8,6 +8,7 @@
 // This is done explicitly into scope with the 'use' statement
 // in Rust - variables are immutable by default
 
+// we need to import the input/output library in order to use its modules
 use std::io;
 
 fn main() {
@@ -27,6 +28,10 @@ fn main() {
 
     // Calling the input/output we imported from the standard library
     // In the next line - we ll call the stdin function from the io module
+
+    // the .read_line(&mut guess) - calls the read_line method on the standard input handle
+    // We re also passing one argument to read_line: &mut guess
+    
     io::stdin().read_line(&mut guess)
         .expect("Failed to read line.");
 
